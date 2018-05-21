@@ -11,9 +11,9 @@
 
   <ng-ais-search-box></ng-ais-search-box>
 
+  <ng-ais-current-refinements [clearRefinements]="false"></ng-ais-current-refinements>
   <ng-ais-refinement-list attribute="categories.lvl0"></ng-ais-refinement-list>
-
-  <ng-ais-clear-refinements></ng-ais-clear-refinements>
+  <ng-ais-clear-refinements buttonLabel="Remove Refinements"></ng-ais-clear-refinements>
 
   <ng-ais-hits>
     <ng-template let-hits="hits">
