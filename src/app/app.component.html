@@ -8,5 +8,11 @@
 <ng-ais-instantsearch
   [config]="algoliaConfig"
 >
-  <ng-ais-hits></ng-ais-hits>
+  <ng-ais-hits>
+    <ng-template let-hits="hits">
+      <div *ngFor="let hit of hits">
+        {{ hit.name }} ({{ hit.category }}) || {{ hit.price }}
+      </div>
+    </ng-template>
+  </ng-ais-hits>
 </ng-ais-instantsearch>
