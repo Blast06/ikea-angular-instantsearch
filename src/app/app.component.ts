@@ -11,7 +11,8 @@ export class AppComponent {
   algoliaConfig = {
     apiKey: '3f46604e5ceef1479ae2ca58ae4f0a71',
     appId: 'ZSL0RJTCOE',
-    indexName: 'ikea'
+    indexName: 'ikea',
+    routing: true
   }
 
 }
