@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Ikea Angular Instantsearch';
+
+  algoliaConfig = {
+    apiKey: '3f46604e5ceef1479ae2ca58ae4f0a71',
+    appId: 'ZSL0RJTCOE',
+    indexName: 'ikea'
+  }
+
 }
