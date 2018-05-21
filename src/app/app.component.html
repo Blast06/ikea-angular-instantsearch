@@ -8,6 +8,9 @@
 <ng-ais-instantsearch
   [config]="algoliaConfig"
 >
+
+  <ng-ais-search-box></ng-ais-search-box>
+
   <ng-ais-hits>
     <ng-template let-hits="hits">
       <div *ngFor="let hit of hits">
@@ -17,4 +20,5 @@
       </div>
     </ng-template>
   </ng-ais-hits>
+
 </ng-ais-instantsearch>
