@@ -11,7 +11,9 @@
   <ng-ais-hits>
     <ng-template let-hits="hits">
       <div *ngFor="let hit of hits">
-        {{ hit.name }} ({{ hit.category }}) || {{ hit.price }}
+        <ng-ais-highlight attribute="name" [hit]="hit">
+        </ng-ais-highlight>
+        ({{ hit.category }}) || {{ hit.price }}
       </div>
     </ng-template>
   </ng-ais-hits>
