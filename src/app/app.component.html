@@ -18,6 +18,7 @@
   <ng-ais-hits>
     <ng-template let-hits="hits">
       <div *ngFor="let hit of hits">
+        <img src="{{hit.image}}" class="image">
         <ng-ais-highlight attribute="name" [hit]="hit">
         </ng-ais-highlight>
         ({{ hit.category }}) || {{ hit.price }}
